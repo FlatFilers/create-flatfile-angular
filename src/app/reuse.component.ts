@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { SpaceModule, ISpace, SpaceService } from '@flatfile/angular-sdk';
-import { workbook } from "./workbook";
 import { listener } from "./listener";
 
 @Component({
@@ -29,26 +28,16 @@ export class AppComponent {
   }
 
   spaceProps: ISpace = {
-    name: 'my space!',
+    space: {
+      id: 'us_sp_1234',
+      accessToken: 'sk_1234'
+    },
     environmentId: 'us_env_1234',
-    publishableKey: 'sk_1234',
-    workbook,
     listener,
     closeSpace: {
       operation: 'submitActionFg',
       onClose: this.closeSpace.bind(this),
     },
-    userInfo: {
-      name: 'my space name'
-    },
-    spaceInfo: {
-      name: 'my space name'
-    },
-    displayAsModal: true,
-    spaceBody: {
-      metadata: {
-        random: 'param'
-      }
-    }
+    displayAsModal: true
   }
 }
