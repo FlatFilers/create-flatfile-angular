@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { SpaceModule, SpaceService } from '@flatfile/angular-sdk';
-import { Flatfile } from '@flatfile/api'
 
 const sheet = {
   name: 'Contacts',
@@ -12,20 +11,17 @@ const sheet = {
       key: 'firstName',
       type: 'string',
       label: 'First Name',
-      config: undefined,
-    } as Flatfile.Property.String,
+    },
     {
       key: 'lastName',
       type: 'string',
       label: 'Last Name',
-      config: undefined,
-    } as Flatfile.Property.String,
+    },
     {
       key: 'email',
       type: 'string',
       label: 'Email',
-      config: undefined,
-    } as Flatfile.Property.String,
+    },
   ],
 }
 
