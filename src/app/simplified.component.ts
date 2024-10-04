@@ -51,7 +51,7 @@ export class AppComponent {
   spaceProps = {
     name: 'My space!',
     environmentId: 'us_env_1234',
-    publishableKey: 'sk_1234',
+    publishableKey: 'pk_1234',
     sheet,
     onSubmit: async ({ job, sheet, }: { job?: any, sheet?: any }): Promise<any> => {
       const data = await sheet.allData()

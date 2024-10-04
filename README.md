@@ -1,6 +1,11 @@
 # CreateFlatfileAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7 which can be installed with `npm install -g @angular/cli@17`.
+
+## Setup
+
+1. Install dependencies: `npm install`
+2. Add your Flatfile publishable key and environment ID to the `app.component.ts` and `simplified.component.ts` files.
 
 ## Development server
 

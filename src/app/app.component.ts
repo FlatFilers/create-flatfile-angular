@@ -30,8 +30,8 @@ export class AppComponent {
 
   spaceProps: ISpace = {
     name: 'my space!',
-    environmentId: 'us_env_1234',
-    publishableKey: 'sk_1234',
+    environmentId: 'us_env_123456',
+    publishableKey: 'pk_1234',
     workbook,
     listener,
     closeSpace: {
